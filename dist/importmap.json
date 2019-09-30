@@ -1,0 +1,24 @@
+
+{
+	"imports": {
+		"authoritarian/": "https://cdn.jsdelivr.net/npm/authoritarian@0.0.0-dev.30/",
+		"commotion/": "https://cdn.jsdelivr.net/npm/commotion@0.1.0-dev.0/",
+		"commotion": "https://cdn.jsdelivr.net/npm/commotion@0.1.0-dev.0/dist/commotion",
+		"crosscall/": "https://cdn.jsdelivr.net/npm/crosscall@0.0.6-dev.11/",
+		"event-decorators/": "https://cdn.jsdelivr.net/npm/event-decorators@0.0.0-dev.0/",
+		"event-decorators": "https://cdn.jsdelivr.net/npm/event-decorators@0.0.0-dev.0/dist/decorators.js",
+		"jsonwebtoken/": "https://cdn.jsdelivr.net/npm/jsonwebtoken@8.5.1/",
+		"jsonwebtoken": "https://cdn.jsdelivr.net/npm/jsonwebtoken@8.5.1/index.js",
+		"lit-element/": "https://cdn.jsdelivr.net/npm/lit-element@2.2.1/",
+		"lit-element": "https://cdn.jsdelivr.net/npm/lit-element@2.2.1/lit-element.js",
+		"lit-html/": "https://cdn.jsdelivr.net/npm/lit-html@1.1.2/",
+		"lit-html": "https://cdn.jsdelivr.net/npm/lit-html@1.1.2/lit-html.js",
+		"menutown/": "https://cdn.jsdelivr.net/npm/menutown@0.0.1-dev.2/",
+		"menutown": "https://cdn.jsdelivr.net/npm/menutown@0.0.1-dev.2/dist/register-all.js",
+		"renraku/": "https://cdn.jsdelivr.net/npm/renraku@0.0.0-dev.13/",
+		"renraku": "https://cdn.jsdelivr.net/npm/renraku@0.0.0-dev.13/dist/index.js",
+		"sassbass/": "https://cdn.jsdelivr.net/npm/sassbass@0.0.2/",
+		"sassbass": "https://cdn.jsdelivr.net/npm/sassbass@0.0.2/index.js"
+	}
+}
+
