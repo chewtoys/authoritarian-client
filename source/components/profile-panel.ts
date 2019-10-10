@@ -95,7 +95,10 @@ export class ProfilePanel extends LoadableElement {
 			_handleSaveClick,
 		} = this
 		const {profile} = this.profileState
-		return profile ? html`
+		const showSaveButton = !this._saving && !!this._changedProfile
+
+		if (!profile) return html``
+		return html`
 			<div class="container">
 				<avatar-display .avatarState=${avatarState}></avatar-display>
 				<div>
@@ -109,9 +112,9 @@ export class ProfilePanel extends LoadableElement {
 						/>
 				</div>
 			</div>
-			${!this._saving && this._changedProfile ? html`
-				<button @click=${_handleSaveClick}>Save</button>
-			` : html``}
-		` : html``
+			${showSaveButton
+				? html`<button @click=${_handleSaveClick}>Save</button>`
+				: html``}
+		`
 	}
 }

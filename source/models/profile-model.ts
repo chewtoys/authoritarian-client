@@ -12,14 +12,6 @@ export function createProfileModel({profiler}: {profiler: ProfilerTopic}):
  ProfileModel {
 
 	let authContext: AuthContext
-
-	async function loadProfile(): Promise<Profile> {
-		const {accessToken} = authContext
-		const profile = await profiler.getFullProfile({accessToken})
-		if (!profile) console.warn("failed to load profile")
-		return profile
-	}
-
 	let cancel: boolean = false
 	const state: ProfileState = {
 		error: null,
@@ -28,6 +20,13 @@ export function createProfileModel({profiler}: {profiler: ProfilerTopic}):
 	}
 
 	const {reader, publishStateUpdate} = makeReader<ProfileState>(state)
+
+	async function loadProfile(): Promise<Profile> {
+		const {accessToken} = authContext
+		const profile = await profiler.getFullProfile({accessToken})
+		if (!profile) console.warn("failed to load profile")
+		return profile
+	}
 
 	return {
 		reader,
